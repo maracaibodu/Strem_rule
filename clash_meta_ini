@@ -43,7 +43,7 @@ custom_proxy_group=🌐 ‍漏网之鱼`select`[]✈️ Proxy`[]🇦🇸 Asia`[]
 custom_proxy_group=🇦🇸 Asia`select`(香港 | 港 | HK|Hong Kong)
 custom_proxy_group=🇯🇵 Japan`select`(日本 | 东京  | JP|Japan)
 custom_proxy_group=🇺🇸 America`select`(美国 | 美 |  US|USA|America|United States)
-custom_proxy_group=🇰🇷 Korea`(韩国|韩|韓|首尔|KR|KOR|Korea)
+custom_proxy_group=🇰🇷 Korea`select`(韩国|韩|韓|首尔|KR|KOR|Korea)
 custom_proxy_group=🇺🇳 Server`select`.*
 ;设置分组标志位
 
