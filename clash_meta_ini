@@ -169,4 +169,4 @@ overwrite_original_rules=true
 surge_rule_base=https://raw.githubusercontent.com/HotKids/Rules/master/Surge/Sample.conf
 surfboard_rule_base=https://raw.githubusercontent.com/HotKids/Rules/master/Surge/Surfboard.conf
 quanx_rule_base=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/Sample.conf
-clash_rule_base=https://raw.githubusercontent.com/HotKids/Rules/master/Clash/General.yaml
+clash_rule_base=https://raw.githubusercontent.com/maracaibodu/Strem_rule/main/clash_config.yaml
