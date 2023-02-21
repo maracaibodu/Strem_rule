@@ -87,7 +87,6 @@ dns:
   nameserver:
     - "tls://dot.diliren.fun"
     - "47.115.212.40:28771" # IQDNS
-    - "https://cn-south.iqiqzz.com/dns-query" # IQDNS
     - "tls://dot.diliren.fun" # dns.pub
   fallback:
     - "tcp://185.222.222.222#Proxy" # dns.sb
