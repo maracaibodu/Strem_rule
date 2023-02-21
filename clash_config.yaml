@@ -88,3 +88,12 @@ dns:
     - "tls://dot.diliren.fun"
     - "47.115.212.40:28771" # IQDNS
     - "tls://dot.diliren.fun" # dns.pub
+  fallback:
+    - "tls://dot.diliren.fun"
+    - "47.115.212.40:28771" # IQDNS
+    - "tls://dot.diliren.fun" # dns.pub
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - "!CN"
