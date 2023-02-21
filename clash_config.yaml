@@ -85,11 +85,10 @@ dns:
     - "https://223.5.5.5/dns-query"
     - "https://1.12.12.12/dns-query"
   nameserver:
-    - "https://doh.apad.pro/dns-query"
-    - "https://cn-east.iqiqzz.com/dns-query" # IQDNS
+    - "tls://dot.diliren.fun"
+    - "47.115.212.40:28771" # IQDNS
     - "https://cn-south.iqiqzz.com/dns-query" # IQDNS
-    - "https://223.5.5.5/dns-query" # alidns
-    - "https://1.12.12.12/dns-query" # dns.pub
+    - "tls://dot.diliren.fun" # dns.pub
   fallback:
     - "tcp://185.222.222.222#Proxy" # dns.sb
     - "tcp://94.140.15.15#Proxy" # adguard
