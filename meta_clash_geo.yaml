@@ -29,6 +29,9 @@ enable-process: true
 #【Meta专属】TCP连接并发,如果域名解析结果对应多个IP, TCP 并发连接所有 IP, 将使用最快握手的 TCP
 tcp-concurrent: true
 
+#ip6开关，当为false时，停止解析hostanmes为ip6地址
+ipv6: false               
+
 profile:
   # 存储 select 选择记录
   store-selected: true
