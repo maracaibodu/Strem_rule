@@ -88,6 +88,8 @@ dns:
     - "https://dns.alidns.com/dns-query"
     - "https://cn-east.iqiqzz.com/dns-query" # IQDNS
     - "https://cn-south.iqiqzz.com/dns-query" # dns.pub
+    - "119.29.29.29"
+    - 1.2.4.8
   fallback:
     - "tcp://185.222.222.222#Proxy" # dns.sb
     - "tcp://94.140.15.15#Proxy" # adguard
