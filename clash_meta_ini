@@ -41,10 +41,10 @@ custom_proxy_group=🚧 AdGuard`select`[]📛 REJECT`[]🔘 DIRECT
 custom_proxy_group=🔘 DIRECT`select`[]DIRECT
 custom_proxy_group=📛 REJECT`select`[]REJECT
 custom_proxy_group=🌐 ‍漏网之鱼`select`[]✈️ Proxy`[]🇦🇸 Asia`[]🇯🇵 Japan`[]🇺🇸 America`[]🇰🇷 Korea`[]🇺🇳 Server
-custom_proxy_group=🇦🇸 Asia`select`(香港 | 港 | HK|Hong Kong| TW| 越南)
+custom_proxy_group=🇨🇳 Asia`select`(香港 | 港 | HK|Hong Kong| TW| 越南)
 custom_proxy_group=🇯🇵 Japan`select`(日本 | 东京  | JP|Japan)
-custom_proxy_group=🇺🇸 America`select`(美国 | 美 |  US|USA|America|United States)
-custom_proxy_group=🇰🇷 Korea`select`(KR|Korea|KOR|首尔|韩|韓)
+custom_proxy_group=🇺🇸 America`select`(美国 | 美 | US| USA|America|United States)
+custom_proxy_group=🇰🇷 Korea`select`(韩国 |Korea| KR| KOR|首尔|韩|韓)
 custom_proxy_group=🇺🇳 Server`select`.*
 ;设置分组标志位
 
