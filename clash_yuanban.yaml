@@ -1,0 +1,94 @@
+# HTTP(S) 和 SOCKS 代理混合端口
+mixed-port: 7888
+# 模式 rule/global/direct
+mode: rule
+allow-lan: false
+log-level: warning
+ipv6: false
+# WebUI
+external-controller: localhost:9090
+external-ui: yacd
+
+# 让延迟测试结果更绿一点...心理加成++++
+unified-delay: true
+
+# 使用Geo Files数据库(默认：false 使用mmdb数据库)
+# 若工作目录无数据库文件,会在第一次启动时自动下载
+geodata-mode: true
+
+# 监视进程名称
+enable-process: true
+# Alpha # find-process-mode: strict
+
+#【Meta专属】TCP连接并发,如果域名解析结果对应多个IP, TCP 并发连接所有 IP, 将使用最快握手的 TCP
+tcp-concurrent: true
+
+profile:
+  # 存储 select 选择记录
+  store-selected: true
+  # 持久化 fake-ip
+  store-fake-ip: false
+
+tun:
+  enable: true
+  stack: system
+  # 需要劫持的 DNS
+  dns-hijack:
+    - 0.0.0.0:53
+  # 配置路由表
+  # auto-route: true
+  # 自动识别出口网卡
+  # auto-detect-interface: true
+  # 最大传输单元
+  # mtu:9000
+  # 将所有连接路由到 tun 来防止泄漏,但你的设备将无法其他设备被访问
+  # strict_route:true
+
+sniffer:
+  enable: true
+  sniffing: [tls, http]
+  skip-domain: ["Mijia Cloud", "+.apple.com"]
+  force-domain: []
+  port-whitelist: [80, 443, 8000-9000]
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    [
+      "connect.rom.miui.com",
+      "+.gstatic.com",
+      "*",
+      "+.lan",
+      "+.stun.*.*",
+      "+.stun.*.*.*",
+      "+.stun.*.*.*.*",
+      "+.stun.*.*.*.*.*",
+      "lens.l.google.com",
+      "*.mcdn.bilivideo.cn",
+    ]
+  fake-ip-range: 28.0.0.1/8
+  proxy-server-nameserver:
+    - "https://223.5.5.5/dns-query"
+    - "https://1.12.12.12/dns-query"
+    - 223.5.5.5
+    - 119.29.29.29
+  default-nameserver:
+    - "https://223.5.5.5/dns-query"
+    - "https://1.12.12.12/dns-query"
+  nameserver:
+    - "https://dns.alidns.com/dns-query"
+    - "https://cn-east.iqiqzz.com/dns-query" # IQDNS
+    - "119.29.29.29"
+    - 1.2.4.8
+  fallback:
+    - "tcp://185.222.222.222#Proxy" # dns.sb
+    - "tcp://94.140.15.15#Proxy" # adguard
+    - "tcp://8.8.4.4#Proxy" # google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - "!CN"
