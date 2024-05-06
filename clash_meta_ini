@@ -1,8 +1,5 @@
 ;设置规则标志位
 ruleset=🔘 DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
-ruleset=🚧 AdGuard,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
-ruleset=🚧 AdGuard,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list
-ruleset=🚧 AdGuard,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
 ruleset=🇨🇳 China,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Streaming_TW.list
 ruleset=🇯🇵 Japan,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Streaming_JP.list
 ruleset=🇺🇸 America,https://raw.githubusercontent.com/HotKids/Rules/master/Surge/RULE-SET/Streaming_US.list
@@ -37,7 +34,6 @@ custom_proxy_group=Ⓜ️ Microsoft`select`[]🇨🇳 China`[]🇯🇵 Japan`[]�
 custom_proxy_group=🍎 Apple`select`[]🔘 DIRECT`[]🇺🇸 America`[]✈️ Proxy
 custom_proxy_group=📬 Telegram`select`[]✈️ Proxy`[]🇨🇳 China`[]🇯🇵 Japan`[]🇰🇷 Korea`[]🔘 DIRECT
 custom_proxy_group=💳 PayPal`select`[]🔘 DIRECT
-custom_proxy_group=🚧 AdGuard`select`[]📛 REJECT`[]🔘 DIRECT
 custom_proxy_group=🔘 DIRECT`select`[]DIRECT
 custom_proxy_group=📛 REJECT`select`[]REJECT
 custom_proxy_group=🌐 ‍漏网之鱼`select`[]✈️ Proxy`[]🇨🇳 China`[]🇯🇵 Japan`[]🇺🇸 America`[]🇰🇷 Korea`[]🇺🇳 Server
